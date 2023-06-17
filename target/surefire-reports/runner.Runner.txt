@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: runner.Runner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 47.302 s <<< FAILURE! - in runner.Runner
+Verify Customer Login functionality.Verify Customer Login functionality negative Testing  Time elapsed: 4.241 s  <<< FAILURE!
+java.lang.AssertionError: expected:<null> but was:<Invalid username or password!>
+
+Verify Customer Login functionality.Verify Customer Login functionality negative Testing  Time elapsed: 4.38 s  <<< FAILURE!
+java.lang.AssertionError: expected:<null> but was:<Invalid username or password!>
+
+Verify Customer Login functionality.Verify Customer Login functionality negative Testing  Time elapsed: 4.447 s  <<< FAILURE!
+java.lang.AssertionError: expected:<null> but was:<Invalid username or password!>
+
