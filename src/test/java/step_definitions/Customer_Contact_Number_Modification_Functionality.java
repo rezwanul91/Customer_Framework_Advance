@@ -84,6 +84,7 @@ public class Customer_Contact_Number_Modification_Functionality extends Base {
 	public void verify_contact_number_is_changed_to(Integer int1) {
 		String v = driver.findElement( By.name("contact") ).getAttribute("value");
 		assertEquals("44555", v);
+		System.out.println("Verification done");
 	}
 
 }
