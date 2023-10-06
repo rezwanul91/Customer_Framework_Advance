@@ -6,6 +6,7 @@ import io.cucumber.java.Scenario;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -45,18 +46,18 @@ public class Hooks extends Base{
 		testData = excelReader.getData(System.getProperty("user.dir") + "\\src\\test\\resources\\testData\\loginData.xlsx", "loginTestData");
 		
 		ChromeOptions options = new ChromeOptions();
-		options.setHeadless(false);
+		options.addArguments("false");
 		
 		switch (config.getProperty("browser")) {
 		case "chrome":
 			ChromeOptions chromeOption = new ChromeOptions();
-			chromeOption.setHeadless(false);
+			chromeOption.addArguments("false");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(chromeOption);
 			break;
 		case "firefox":
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.setHeadless(false);
+			firefoxOptions.addArguments("false");
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver(firefoxOptions);
 			break;
@@ -78,7 +79,7 @@ public class Hooks extends Base{
 		
 		int seconds = Integer.parseInt(config.getProperty("implisitWait"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(seconds , TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		System.out.println("before run");
 	}
 	

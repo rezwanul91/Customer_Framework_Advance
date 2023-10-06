@@ -2,6 +2,8 @@ package step_definitions;
 
 import static org.junit.Assert.assertEquals;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -47,7 +49,7 @@ public class Customer_Contact_Number_Modification_Functionality extends Base {
 
 	@Then("Verify that I am in Home Page")
 	public void verify_that_i_am_in_home_page() {
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[2]") ));
 		
 		String s = getElementText( By.xpath("//h2[2]") );

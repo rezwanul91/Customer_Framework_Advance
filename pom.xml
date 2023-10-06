@@ -5,10 +5,10 @@
   <version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<cucumber-java.version>5.7.0</cucumber-java.version>
-		<cucumber-junit.version>5.7.0</cucumber-junit.version>
-		<selenium-java.version>3.141.59</selenium-java.version> 
-		<webdrivermanager.version>4.4.3</webdrivermanager.version>
+		<cucumber-java.version>6.11.0</cucumber-java.version>
+		<cucumber-junit.version>6.11.0</cucumber-junit.version>
+		<selenium-java.version>4.13.0</selenium-java.version> 
+		<webdrivermanager.version>5.5.3</webdrivermanager.version>
 		<allure.cucumber5.version>2.14.0</allure.cucumber5.version>
 		<allure.junit4.version>2.14.0</allure.junit4.version>
 		<maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
